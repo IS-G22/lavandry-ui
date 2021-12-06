@@ -19,7 +19,7 @@ var files = [
     "/photo/eng.png",
     "/photo/ita.png",
     "/photo/frg.png",
-    "/photo/lavatrice.JPG",
+    "/photo/lavatrice.jpg",
     "/photo/favicon.png",
     "https://img.icons8.com/material-outlined/24/000000/menu--v3.png",
     "https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js",
