@@ -50,7 +50,7 @@
                         </li>
                     </ul>
                 </div>
-                <div v-if="frogActivated" class="frog"></div>
+                <div v-if="frogActivated" class="frog" v-bind:class="[frogActivated ? 'frogactive' : '']"></div>
                 
 
                 <div class="language-wrapper">
