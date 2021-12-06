@@ -47,11 +47,21 @@ const app = new Vue({
                 i18n.locale = 'it';
             }
             this.isEng = !this.isEng;
+            window.localStorage.language = i18n.locale;
         }
     },
     mounted: function () {
         this.isActive = window.location.hash;
         registerSW();
+        if(window.localStorage.language){
+            console.log(window.localStorage.language);
+            i18n.locale=window.localStorage.language;
+            if(window.localStorage.language=='en'){
+                this.isEng=true;
+            }
+        }else{
+            window.localStorage.language="it";
+        }
     },
 }).$mount('#app')
 
