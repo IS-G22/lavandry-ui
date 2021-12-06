@@ -1,5 +1,5 @@
 const variables ={
-    API_URL:"http://localhost:49146/api/",
+    API_URL:"https://lavadry.herokuapp.com/",
     ID_UTENTE:"1",
 }
 
