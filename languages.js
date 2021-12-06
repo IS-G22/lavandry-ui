@@ -65,6 +65,10 @@ const languages =
     },
     guasto: {
       titolo: "Segnala il guasto di una Lavatrice",
+      select:"Seleziona la lavatrice da segnalare:",
+      form:"Descrivi brevemente il guasto:",
+      send:"INVIA SEGNALAZIONE",
+      complete:"Segnalazione inviata con successo! I tecnici provvederanno a risolvere il problema il prima possibile."
     },
     tipolavaggio: ["Rapido", "Delicati", "30 Gradi"],
     lavatrice: { bottone: { bloccata: "Sblocca", sbloccata: "Blocca" } },
