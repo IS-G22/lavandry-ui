@@ -55,6 +55,10 @@ const app = new Vue({
                 console.log("Frog Activated");
                 this.frogActivated=true;
             }
+        },
+        closeFrog: function(){
+            this.frogActivated=false;
+            this.isFrog=0;
         }
     },
     mounted: function () {
