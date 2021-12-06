@@ -1,5 +1,5 @@
 
-var staticCacheName = "lavandry-1.0.0";
+var staticCacheName = "lavandry-1.0.1";
 
 var files = [
     "./index.html",
