@@ -63,6 +63,9 @@ const languages =
       lista:"Torna alla lista delle Prenotazioni",
       max:"Numero massimo di prenotazioni raggiunto!"
     },
+    guasto: {
+      titolo: "Segnala il guasto di una Lavatrice",
+    },
     tipolavaggio: ["Rapido", "Delicati", "30 Gradi"],
     lavatrice: { bottone: { bloccata: "Sblocca", sbloccata: "Blocca" } },
     tecnico: { titolo: "Lavatrici" }
