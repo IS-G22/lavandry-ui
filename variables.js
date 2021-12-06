@@ -1,7 +1,7 @@
 const variables ={
     API_URL:"https://lavadry.herokuapp.com/api/",
     ID_UTENTE:"1",
-}
+} 
 
 function addZero(min){
     if(min<=9){

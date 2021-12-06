@@ -1,13 +1,12 @@
-
-var staticCacheName = "lavandry-1.0.1";
+var staticCacheName = "lavandry-1.0.14";
 
 var files = [
+    "./",
     "./index.html",
     "./app.js",
     "./languages.js",
     "./manifest.json",
-    "./pwa.js",
-    // "./serviceworker.js",
+    "./serviceworker.js",
     "./variables.js",
     "./style.css",
     "./components/componenti.js",
@@ -20,13 +19,14 @@ var files = [
     "./photo/frg.png",
     "./photo/lavatrice.jpg",
     "./photo/favicon.png",
+    "./favicon.ico",
+    "./lottie/loading.json",
     "https://img.icons8.com/material-outlined/24/000000/menu--v3.png",
     "https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js",
     "https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js",
     "https://unpkg.com/vue/dist/vue.js",
     "https://unpkg.com/vue-router/dist/vue-router.js",
     "https://unpkg.com/vue-i18n@8",
-
 ]
 
 self.addEventListener("install", function (e) {
@@ -41,8 +41,33 @@ self.addEventListener("fetch", function (event) {
     console.log(event.request.url);
 
     event.respondWith(
-        caches.match(event.request).then(function (response) {
+        caches.match(event.request).then(async function (response) {
+            await aggiorna(event.request)
+            console.log(response)
             return response || fetch(event.request);
         })
     );
 });
+
+
+async function aggiorna(request) {
+    try {
+        console.log("Provo a scaricare il file ", request.url)
+        fetch(request)
+            .then((response) => {
+                caches.open(staticCacheName).then(function (cache) {
+                    let cacheresponse = cache.add(request.url);
+                    if (cacheresponse)
+                        console.log("Ho aggiornato il file", request.url);
+                    else
+                        console.log(cacheresponse)
+                    return cacheresponse;
+                })
+            }).catch((e) => {
+                console.log("Non l'ho scaricato", request.url)
+            })
+
+    } catch (error) {
+        console.error(error);
+    }
+}

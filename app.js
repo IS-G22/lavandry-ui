@@ -62,12 +62,17 @@ const app = new Vue({
 async function registerSW() {
     if ('serviceWorker' in navigator) {
         try {
+            console.log('trying sw');
             await navigator
                 .serviceWorker
-                .register('/serviceworker.js');
+                .register('serviceworker.js');
+            console.log('SW registration success');
         }
         catch (e) {
             console.log('SW registration failed');
+            throw e;
         }
+    }else{
+        console.log("no sw")
     }
 }
