@@ -11,6 +11,7 @@ async function registerSW() {
                 .register('serviceworker.js');
         }
         catch (e) {
+            throw e;
             console.log('SW registration failed');
         }
     }
