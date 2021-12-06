@@ -1,5 +1,5 @@
 
-var staticCacheName = "lavandry-1.0.0";
+var staticCacheName = "lavandry-1.0.1";
 
 var files = [
     "./index.html",
@@ -7,7 +7,7 @@ var files = [
     "./languages.js",
     "./manifest.json",
     "./pwa.js",
-    "./serviceworker.js",
+    // "./serviceworker.js",
     "./variables.js",
     "./style.css",
     "./components/componenti.js",
@@ -15,7 +15,6 @@ var files = [
     "./components/nuovaprenotazione.js",
     "./components/prenotazioni.js",
     "./components/viewTecnico.js",
-    "./lottie/loading.json",
     "./photo/eng.png",
     "./photo/ita.png",
     "./photo/frg.png",
