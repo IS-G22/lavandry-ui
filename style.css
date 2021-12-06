@@ -436,11 +436,25 @@ li{
     background-color: var(--box-active-color);
 }
 
+.frog{
+    width: 200px;
+    height: 200px;
+    background: no-repeat url("./photo/frg.png");
+    background-size: 200px;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.frogactive{
+    opacity: 1;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 700px) {
     .leftbar{
         position: absolute;
         visibility: hidden;
-        height: 80%;
+        min-height: 80%;
         width: 95%;
         z-index: 2;
         transform: translateX(-110%);
