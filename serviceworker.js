@@ -1,4 +1,4 @@
-var staticCacheName = "lavandry-1.0.14";
+var staticCacheName = "lavandry-1.0.16";
 
 var files = [
     "./",
@@ -42,7 +42,19 @@ self.addEventListener("fetch", function (event) {
 
     event.respondWith(
         caches.match(event.request).then(async function (response) {
-            await aggiorna(event.request)
+            // await aggiorna(event.request)
+            let resp = fetch(event.request)
+                .then((r) => {
+                    return r;
+                })
+                .then((r) => {
+                    return r;
+                }).catch(error => {
+                    return response;
+                });
+
+            return resp;
+
             console.log(response)
             return response || fetch(event.request);
         })
