@@ -25,6 +25,8 @@ const app = new Vue({
         isMenuOpen: false,
         isToggle: false,
         isEng: false,
+        isFrog:0,
+        frogActivated:false,
     },
     methods: {
         setActive: function () {
@@ -48,6 +50,11 @@ const app = new Vue({
             }
             this.isEng = !this.isEng;
             window.localStorage.language = i18n.locale;
+            this.isFrog+=1;
+            if(this.isFrog==10){
+                console.log("Frog Activated");
+                this.frogActivated=true;
+            }
         }
     },
     mounted: function () {
