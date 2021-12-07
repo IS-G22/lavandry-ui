@@ -1,4 +1,4 @@
-var staticCacheName = "lavandry-1.0.16";
+var staticCacheName = "lavandry-1.0.17";
 
 var files = [
     "./",
@@ -48,15 +48,16 @@ self.addEventListener("fetch", function (event) {
                     return r;
                 })
                 .then((r) => {
+                    console.log("File", r.url, "Scaricato")
+                    caches.add(r.url);
+                    console.log("File", r.url, "Aggiornato")
                     return r;
                 }).catch(error => {
+                    console.log("File", r.url, "Preso da Cache")
                     return response;
                 });
 
             return resp;
-
-            console.log(response)
-            return response || fetch(event.request);
         })
     );
 });
