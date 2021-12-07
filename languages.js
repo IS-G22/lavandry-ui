@@ -44,7 +44,7 @@ const languages =
     },
     tipolavaggio: ["Fast", "Delicate", "30 Degrees"],
     lavatrice: { bottone: { bloccata: "Unlock", sbloccata: "Lock" } },
-    tecnico: { titolo: "Whasing Machines" }
+    tecnico: { titolo: "Whashing Machines" }
   },
   it: {
     errorapi: "Ci sta mettendo troppo tempo! L'API potrebbe essere non raggiungibile.",
