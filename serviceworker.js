@@ -53,7 +53,7 @@ self.addEventListener("fetch", function (event) {
                     console.log("File", r.url, "Aggiornato")
                     return r;
                 }).catch(error => {
-                    console.log("File", r.url, "Preso da Cache")
+                    console.log("File", "Preso da Cache")
                     return response;
                 });
 
