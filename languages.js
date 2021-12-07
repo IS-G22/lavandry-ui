@@ -1,6 +1,7 @@
 const languages =
 {
   en: {
+    errorapi: "It's taking too long! The API may be unreachable.",
     giorni: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
     mesi: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
     menu: {
