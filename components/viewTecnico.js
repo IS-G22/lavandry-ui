@@ -10,6 +10,7 @@ const lavatrice = {
         </div>
         <button @click="toggleClicca" class="btn btn-lavatrice" v-bind:class="[lavatrice.stato=='bloccata' ? 'bloccata' : 'sbloccata']">{{ $t("lavatrice.bottone." +lavatrice.stato)}}</button>
         </div>
+        <div class="open border" @click="apriSportello(lavatrice)">{{ $t("prenotazioni.pren.apri") }}</div>
     </div>`,
     data() {
         return {
@@ -50,7 +51,14 @@ const lavatrice = {
                         
                     }
                 })
-        }
+        },
+        apriSportello(lavatrice){
+            axios.get(variables.API_URL+"lavatrice/"+lavatrice.id+"/apri")
+            .then((response)=>{//apri un messaggio a schermo
+                clearTimeout(timer);
+                console.log(response.data);
+            })
+        },
     },
     mounted: function () {
 

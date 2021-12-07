@@ -451,6 +451,10 @@ li{
     cursor: pointer;
 }
 
+.border{
+    border-top: 1px solid black;
+    background-color: white;
+}
 
 .form{
     width: 250px;
