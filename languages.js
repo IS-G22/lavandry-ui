@@ -42,6 +42,11 @@ const languages =
     },
     guasto: {
       titolo: "Report failure",
+      select:"",
+      form:"",
+      send:"",
+      complete:""
+    
     },
     tipolavaggio: ["Fast", "Delicate", "30 Degrees"],
     lavatrice: { bottone: { bloccata: "Unlock", sbloccata: "Lock" } },
