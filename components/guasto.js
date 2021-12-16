@@ -19,7 +19,7 @@ const guasto = {
             <h2>{{ $t("guasto.form") }}</h2>
             <div>
                 <form class="form-container">
-                    <textarea v-model="message" cols="40" rows="5" class="form" type="text" placeholder="C'è acqua da tutte le parti!"></textarea>
+                    <textarea v-model="message" cols="40" rows="5" class="form" type="text" :placeholder="$t('guasto.placeholder')"></textarea>
                 </form>
             </div>
             <div class="lavaggio" @click="inviaSegnalazione">

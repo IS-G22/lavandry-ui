@@ -49,7 +49,8 @@ const languages =
       select:"",
       form:"",
       send:"",
-      complete:""
+      complete:"",
+      placeholder:""
     
     },
     tipolavaggio: ["","Fast", "Delicate", "30 Degrees"],
@@ -106,7 +107,8 @@ const languages =
       select:"Seleziona la lavatrice da segnalare:",
       form:"Descrivi brevemente il guasto:",
       send:"INVIA SEGNALAZIONE",
-      complete:"Segnalazione inviata con successo! I tecnici provvederanno a risolvere il problema il prima possibile."
+      complete:"Segnalazione inviata con successo! I tecnici provvederanno a risolvere il problema il prima possibile.",
+      placeholder:"Perde acqua da tutte le parti!"
     },
     tipolavaggio: ["","Rapido", "Delicati", "30 Gradi"],
     lavatrice: { bottone: { bloccata: "Sblocca", sbloccata: "Blocca" } },
