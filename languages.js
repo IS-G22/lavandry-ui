@@ -48,7 +48,7 @@ const languages =
       complete:""
     
     },
-    tipolavaggio: ["Fast", "Delicate", "30 Degrees"],
+    tipolavaggio: ["","Fast", "Delicate", "30 Degrees"],
     lavatrice: { bottone: { bloccata: "Unlock", sbloccata: "Lock" } },
     tecnico: { titolo: "Washing Machines" }
   },
@@ -99,7 +99,7 @@ const languages =
       send:"INVIA SEGNALAZIONE",
       complete:"Segnalazione inviata con successo! I tecnici provvederanno a risolvere il problema il prima possibile."
     },
-    tipolavaggio: ["Rapido", "Delicati", "30 Gradi"],
+    tipolavaggio: ["","Rapido", "Delicati", "30 Gradi"],
     lavatrice: { bottone: { bloccata: "Sblocca", sbloccata: "Blocca" } },
     tecnico: { titolo: "Lavatrici" }
   }
