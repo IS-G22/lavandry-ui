@@ -38,7 +38,11 @@ const languages =
       buttonconferma: "Confirm",
       successo: "Your Reservation has been successfully saved.",
       lista: "Go back to the Reservations List",
-      max: "ERROR: maximum number of active Reservations has been reached."
+      max: "ERROR: maximum number of active Reservations has been reached.",
+      tipo:"",
+      giorno:"",
+      slot:"",
+
     },
     guasto: {
       titolo: "Report failure",
@@ -90,7 +94,12 @@ const languages =
       buttonconferma: "Conferma Prenotazione",
       successo: "La Prenotazione è stata effettuata con successo!",
       lista: "Torna alla lista delle Prenotazioni",
-      max: "Numero massimo di prenotazioni raggiunto!"
+      max: "Numero massimo di prenotazioni raggiunto!",
+      tipo:"Scegli il tipo di lavaggio che vuoi effettuare:",
+      giorno: "Seleziona il giorno:",
+      slot:"Seleziona  l'ora:",
+
+
     },
     guasto: {
       titolo: "Segnala un Guasto",
