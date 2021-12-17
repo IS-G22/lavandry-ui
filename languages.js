@@ -39,18 +39,18 @@ const languages =
       successo: "Your Reservation has been successfully saved.",
       lista: "Go back to the Reservations List",
       max: "ERROR: maximum number of active Reservations has been reached.",
-      tipo:"",
-      giorno:"",
-      slot:"",
+      tipo:"Choose the type of wash you want to carry out:",
+      giorno:"Choose the day:",
+      slot:"Choose the time:",
 
     },
     guasto: {
       titolo: "Report failure",
-      select:"",
-      form:"",
-      send:"",
-      complete:"",
-      placeholder:""
+      select:"Select a Wahisng Machine",
+      form:"Failure description:",
+      send:"SEND REPORT",
+      complete:"Report sent successfully! The technicians will solve the problem as soon as possible.",
+      placeholder:"It is leaking water on all sides!"
     
     },
     tipolavaggio: ["","Fast", "Delicate", "30 Degrees"],
