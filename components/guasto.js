@@ -14,7 +14,7 @@ const guasto = {
             <div class="back" @click="backToStart"><span><</span></div>
             
             <div class="lavaggio">
-                <div>{{ $t("prenotazioni.pren.lavatrice")}} {{lavatriceSelected.id}}</div> <span>></span>
+                <div>{{ $t("prenotazioni.pren.lavatrice")}}</div> <span>></span>
             </div>
             <h2>{{ $t("guasto.form") }}</h2>
             <div>
